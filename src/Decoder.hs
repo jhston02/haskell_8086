@@ -22,3 +22,4 @@ data Register
 
 data Instruction = Mov {destination :: Register, source :: Register}
 
+-- Test
