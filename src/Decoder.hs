@@ -1,25 +1,9 @@
 module Decoder where
 
-import Data.ByteString
+import Instructions
 
-data Register
-  = AL
-  | CL
-  | DL
-  | BL
-  | AH
-  | CH
-  | CD
-  | BH
-  | AX
-  | CX
-  | DX
-  | BX
-  | SP
-  | BP
-  | SI
-  | DI
+decode :: EncodedInstruction -> Instruction
+decode = undefined
 
-data Instruction = Mov {destination :: Register, source :: Register}
-
--- Test
+encode :: Instruction -> EncodedInstruction
+encode = undefined
