@@ -22,10 +22,11 @@ data Register
   | SI
   | DI
 
-type MemoryAddress = Integer
+type MemoryAddress = Int
 
 data MemoryLocation
   = CPU Register
   | Memory MemoryAddress
 
 data Instruction = Mov {destination :: MemoryLocation, source :: MemoryLocation}
+
